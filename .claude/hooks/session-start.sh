@@ -58,3 +58,10 @@ plugins=(
 for p in "${plugins[@]}"; do
   claude plugin install "$p" || true
 done
+
+# Skills-dir plugins (cloned directly into ~/.claude/skills, not via a
+# marketplace) — auto-load as <name>@skills-dir next session.
+mkdir -p ~/.claude/skills
+if [ ! -d ~/.claude/skills/prompt-master ]; then
+  git clone https://github.com/nidhinjs/prompt-master.git ~/.claude/skills/prompt-master
+fi
