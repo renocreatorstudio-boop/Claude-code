@@ -78,6 +78,22 @@ Only `transform`, `opacity`, `filter` and `clip-path` are ever animated — neve
 `width`, `height`, `top`, `left` or `color`. `will-change` goes on at tween
 start and comes straight back off.
 
+## Single-file bundle
+
+`node build/bundle.js` folds the whole site into one page — every page becomes a
+`<template>`, a hash router clones one into the live `<main>` and asks
+`window.Halstead.initMotion()` to rebuild the motion against it. CSS, fonts (as
+data URIs) and GSAP are inlined, so the result makes **no network requests at
+all**.
+
+| Output | For |
+| --- | --- |
+| `dist/halstead.html` | A complete standalone document — opens from disk, drops onto any host as one file |
+| `dist/halstead.artifact.html` | The same page without `<head>`, for hosts that supply their own document shell |
+
+The bundle is a convenience, not the source: edit the pages under `sites/halstead`
+and re-run the build.
+
 ## Notes
 
 - **Zero raster assets.** Every project preview, panel and glow is drawn in CSS.
