@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://halstead.studio/sitemap.xml
