@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bram Vos — Halstead</title>
+<meta name="description" content="Their portfolio took nine seconds to load on a site visit. Rebuilt to open in under one on bad 4G, without shrinking a single image.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#07080A">
+<meta property="og:site_name" content="Halstead">
+<meta property="og:title" content="Bram Vos — Halstead">
+<meta property="og:description" content="Their portfolio took nine seconds to load on a site visit. Rebuilt to open in under one on bad 4G, without shrinking a single image.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2307080A'/%3E%3Cpath d='M9 23V9h2.6v5.7h8.8V9H23v14h-2.6v-5.9h-8.8V23z' fill='%23E3B778'/%3E%3C/svg%3E">
+<link rel="preload" href="../assets/fonts/fraunces-normal-340-480.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/public-sans-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/fonts.css">
+<link rel="stylesheet" href="../assets/css/site.css">
+<script src="../assets/js/boot.js"></script>
+</head>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+<header class="nav" id="nav" data-nav-reveal>
+  <a class="nav__mark" href="../index.html">Halstead</a>
+  <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navLinks">
+    <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>Menu
+  </button>
+  <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="../work/index.html" aria-current="page">Work</a>
+      <a href="../process.html">Process</a>
+      <a href="../studio.html">Studio</a>
+    <a class="btn btn--solid nav__cta" href="../contact.html">Start a project</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <article>
+  <section class="scene phero">
+    <div class="layer phero__bg" data-depth="0" data-parallax aria-hidden="true"></div>
+    <div class="layer" data-depth="1" data-parallax aria-hidden="true"><span class="glow phero__glow"></span></div>
+
+    <div class="inner" data-depth="4" data-fade-group>
+      <p class="eyebrow" data-fade><span class="dot"></span>Architecture practice, Rotterdam · 2023</p>
+      <h1 class="wipe" id="pageTitle" data-wipe="manual">
+          <span class="line"><span>Nine seconds</span></span>
+          <span class="line"><span>to under one,</span></span>
+          <span class="line"><span>at full resolution.</span></span>
+      </h1>
+      <p class="lede" data-fade>An architecture practice whose work is photographs, on a site that took nine seconds to show one. The people they most wanted to impress were opening it on a phone, on a building site, on bad signal.</p>
+      <div class="phero__meta" data-fade>
+        <span>Client<b>Bram Vos Architecten</b></span>
+        <span>Year<b>2023</b></span>
+        <span>Role<b>Strategy, design, build</b></span>
+        <span>Duration<b>Six weeks</b></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="scene" style="background:var(--ink-2)">
+    <div class="layer" data-depth="0" data-parallax aria-hidden="true" style="background:linear-gradient(180deg,#0A0C10,#0C0E12 60%,#0A0C0F)"></div>
+    <div class="layer" data-depth="1" data-parallax aria-hidden="true">
+      <span class="glow" style="width:38vw;height:38vw;right:-8%;top:10%;background:rgba(227,183,120,.10)"></span>
+    </div>
+
+    <div class="inner" data-depth="4">
+      <div class="card__art art-6" aria-hidden="true" style="border:1px solid var(--faint);border-radius:16px;margin-top:clamp(2rem,6vh,4rem)">
+        <i class="lg"></i><i class="sm"></i><i class="md"></i><span class="slab"></span>
+      </div>
+
+      <div class="case__stats">
+        <div class="stat"><b>0.9s</b><span>largest contentful paint on throttled 4G, from 9.2s</span></div>
+        <div class="stat"><b>−87%</b><span>bytes over the wire, with no visible loss of quality</span></div>
+        <div class="stat"><b>+2.4×</b><span>median pages per session on mobile</span></div>
+      </div>
+
+      <div class="case__section">
+        <div class="case__grid">
+          <div><p class="case__label">01</p><h2>The problem</h2></div>
+          <div class="prose">
+          <p>Every image was a full-resolution JPEG, served at whatever size the browser asked for, through a page builder that loaded four carousel libraries to show one photograph. The first project image was 6.1MB.</p>
+          <p>Bram's objection was reasonable and had blocked every previous attempt: the images are the work, and he was not going to let anyone compress them into mush to win a score in a testing tool.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="case__section">
+        <div class="case__grid">
+          <div><p class="case__label">02</p><h2>What we did</h2></div>
+          <div class="prose">
+          <p>So we did not compress them into mush. We built a pipeline that generates seven widths per image in AVIF and WebP with a JPEG fallback, at quality settings chosen by eye — Bram sat with me and rejected settings until he could not tell the difference on his own monitor.</p>
+          <p>Then the page stopped fighting itself: no carousel library, no page builder, no fonts blocking the first paint. A photograph appears before anything else on the page, which for this practice is the entire point.</p>
+            <ul>
+            <li>Seven responsive widths per image, AVIF/WebP/JPEG, generated on upload</li>
+            <li>Quality thresholds set by the architect, by eye, not by a score</li>
+            <li>Native lazy-loading below the fold; the hero image preloaded</li>
+            <li>A CMS the practice manager can use without a training session</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="case__section">
+        <div class="case__grid">
+          <div><p class="case__label">03</p><h2>How it was built</h2></div>
+          <div class="prose">
+          <p>Static generation with an image pipeline that runs at build time, so an upload becomes twenty-one derivatives without anyone thinking about it. The CMS writes Markdown; the build does the rest.</p>
+          <p>No JavaScript is required to view a project. The gallery enhances with it and works completely without it, which is what makes it fast on the connection that actually matters.</p>
+            <dl class="spec">
+          <div><dt>Scope</dt><dd>Full rebuild, image pipeline, CMS</dd></div>
+          <div><dt>Projects</dt><dd>38 published</dd></div>
+          <div><dt>Stack</dt><dd>Static site generator · build-time image pipeline</dd></div>
+          <div><dt>Weight</dt><dd>104KB including the hero photograph</dd></div>
+          <div><dt>Timeline</dt><dd>Six weeks, Nov–Dec 2023</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+
+      <div class="case__section">
+        <div class="case__grid">
+          <div><p class="case__label">04</p><h2>What happened</h2></div>
+          <div class="prose">
+          <p>Largest contentful paint went from 9.2 seconds to 0.9 on throttled 4G, with 87% fewer bytes and no change a working architect can see. Mobile pages per session more than doubled.</p>
+            <blockquote>I said no to this three times because the last two people wanted to ruin the photographs. He proved he would not, then made it ten times faster anyway.<cite>Bram Vos, principal</cite></blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </article>
+
+  <section class="scene next">
+    <div class="layer" data-depth="0" data-parallax aria-hidden="true" style="background:linear-gradient(180deg,#0A0C0F,#07080A)"></div>
+    <div class="inner" data-depth="4" data-fade-group>
+      <p class="eyebrow" data-fade>Next project</p>
+      <a class="next__link" href="vantage.html">
+        <h2>Vantage</h2>
+        <span class="card__go">SaaS analytics platform <span class="arrow" aria-hidden="true">&rarr;</span></span>
+      </a>
+      <a class="next__link" href="../contact.html">
+        <h2>Start a project</h2>
+        <span class="card__go">Two slots open for Q4 <span class="arrow" aria-hidden="true">&rarr;</span></span>
+      </a>
+      <footer>
+        <div class="footer__grid">
+          <div>
+            <h4>Halstead</h4>
+            <p>Independent web design and build, one project at a time. Working with founders across Europe and North America.</p>
+          </div>
+          <div>
+            <h4>Site</h4>
+            <div class="footer__nav">
+              <a href="../index.html">Home</a>
+              <a href="../work/index.html">Work</a>
+              <a href="../process.html">Process</a>
+              <a href="../studio.html">Studio</a>
+              <a href="../contact.html">Contact</a>
+            </div>
+          </div>
+          <div>
+            <h4>Elsewhere</h4>
+            <div class="footer__nav">
+              <a href="mailto:hello@halstead.studio">hello@halstead.studio</a>
+              <a href="../contact.html">Start a project</a>
+              <a href="#top">Back to top</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__inner">
+          <p>&copy; <span data-year>2026</span> Halstead. Built by hand — no page builder underneath.</p>
+          <p><a href="#top">Back to top</a></p>
+        </div>
+      </footer>
+    </div>
+  </section>
+
+</main>
+<script src="../assets/js/vendor/gsap.min.js" defer></script>
+<script src="../assets/js/vendor/ScrollTrigger.min.js" defer></script>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>
