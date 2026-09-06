@@ -1,0 +1,214 @@
+  <!-- HERO — depth 0 bg · 1 glow · 2 grid · 3 visual · 4 copy · 5 accent -->
+  <section class="scene hero" id="hero">
+    <div class="layer hero__bg" data-depth="0" data-parallax aria-hidden="true"></div>
+    <div class="layer" data-depth="1" data-parallax aria-hidden="true">
+      <span class="glow hero__glow-a"></span>
+      <span class="glow hero__glow-b"></span>
+    </div>
+    <div class="layer" data-depth="2" data-parallax aria-hidden="true">
+      <span class="hero__grid"></span>
+      <span class="hairline" style="left:0;right:0;bottom:14%"></span>
+    </div>
+
+    <div class="inner hero__inner">
+      <div data-depth="4">
+        <p class="eyebrow" data-fade><span class="dot"></span>RenoCreatorStudio — design studio, working anywhere</p>
+
+        <h1 class="wipe" id="heroTitle" data-wipe="manual">
+          <span class="line"><span>I make the things</span></span>
+          <span class="line"><span>people judge you by</span></span>
+          <span class="line"><span><em>before we ever meet</em>.</span></span>
+        </h1>
+
+        <p class="lede hero__lede" data-fade>
+          Websites, apps and original artwork for people who need the work to look
+          considered the moment it loads. One person, start to finish, wherever you are.
+        </p>
+
+        <div class="hero__actions" data-fade>
+          <a class="btn btn--solid" href="#work">See the work <span class="arrow" aria-hidden="true">&rarr;</span></a>
+          <a class="btn btn--ghost" href="contact.html">Start a project</a>
+        </div>
+
+        <p class="hero__status" data-fade><span class="pip" aria-hidden="true"></span>{{AVAILABILITY}}</p>
+      </div>
+
+      <!-- depth-3: the page's only looping motion -->
+      <div class="hero__visual" data-depth="3" aria-hidden="true">
+        <div class="hv">
+          <div class="hv__panel hv__back"></div>
+          <div class="hv__panel hv__mid"></div>
+          <div class="hv__panel hv__front">
+            <div class="hv__chrome"><i></i><i></i><i></i></div>
+            <span class="hv__bar accent"></span>
+            <span class="hv__bar w-88"></span>
+            <span class="hv__bar w-70"></span>
+            <span class="hv__bar w-45"></span>
+            <div class="hv__block"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="layer" data-depth="5" data-parallax aria-hidden="true">
+      <span class="glow" style="width:9vw;height:9vw;left:8%;top:22%;background:rgba(227,183,120,.22);filter:blur(50px)"></span>
+    </div>
+  </section>
+
+
+  <!-- WORK — horizontal gallery. Transition in: the diagonal wipe. -->
+  <section class="scene work" id="work" aria-labelledby="workHeading">
+    <div class="layer work__bg" data-depth="0" data-parallax aria-hidden="true"></div>
+    <div class="layer" data-depth="1" data-parallax aria-hidden="true"><span class="glow work__glow"></span></div>
+    <div class="layer" data-depth="2" data-parallax aria-hidden="true">
+      <span class="hairline" style="left:0;right:0;top:36%"></span>
+    </div>
+
+    <div class="veil" id="veil" data-depth="5" aria-hidden="true"></div>
+
+    <div class="inner work__head" data-depth="4" data-fade-group>
+      <div>
+        <p class="eyebrow" data-fade>Selected work</p>
+        <h2 class="wipe" id="workHeading">
+          <span class="line"><span>Different mediums.</span></span>
+          <span class="line"><span>The same eye.</span></span>
+        </h2>
+      </div>
+      <p class="work__count" data-fade>
+        Every one designed and made by the same pair of hands.
+        <span class="only-fine">Scroll sideways.</span><span class="only-coarse">Keep scrolling.</span>
+      </p>
+    </div>
+
+    <div class="work__pin" id="workPin" data-depth="3">
+      <div class="work__track" id="workTrack">
+<!-- PROJECT_CARDS:START --><!-- PROJECT_CARDS:END -->
+      </div>
+    </div>
+
+    <div class="work__rail" data-depth="4" aria-hidden="true">
+      <span>01</span>
+      <span class="track"><b id="railFill"></b></span>
+      <span>{{PROJECT_COUNT}}</span>
+    </div>
+
+    <div class="inner work__outro" data-depth="4" data-fade-group>
+      <p data-fade>
+        Websites, apps and artwork are the same job wearing different clothes: decide
+        what someone should feel in the first second, then remove everything that gets
+        in the way of it.
+      </p>
+      <div data-fade><a class="btn btn--ghost" href="work/index.html">Every project <span class="arrow" aria-hidden="true">&rarr;</span></a></div>
+    </div>
+  </section>
+
+
+  <!-- PROCESS — quiet seam: hairline draws, then steps clip up in sequence -->
+  <section class="scene process" id="process" aria-labelledby="processHeading">
+    <div class="layer process__bg" data-depth="0" data-parallax aria-hidden="true"></div>
+    <div class="layer" data-depth="1" data-parallax aria-hidden="true"><span class="glow process__glow"></span></div>
+    <div class="layer" data-depth="2" data-parallax aria-hidden="true">
+      <span class="hairline" style="left:10%;right:10%;top:12%"></span>
+      <span class="hairline" style="left:10%;right:10%;bottom:10%"></span>
+    </div>
+
+    <div class="inner" data-depth="4">
+      <div class="process__head" data-fade-group>
+        <p class="eyebrow" data-fade>How it works</p>
+        <h2 class="wipe" id="processHeading">
+          <span class="line"><span>You always know</span></span>
+          <span class="line"><span>which week you're in,</span></span>
+          <span class="line"><span>and what <em>comes next</em>.</span></span>
+        </h2>
+        <p class="lede" data-fade>
+          No account manager, no relay race. You talk to the person doing the work,
+          every time.
+        </p>
+      </div>
+
+      <div class="process__rule" id="processRule" aria-hidden="true"></div>
+
+      <div class="steps">
+        <div class="step">
+          <p class="step__n">01 — Brief</p>
+          <h3>Questions before pictures</h3>
+          <p>Who it is for, what it has to do, and the one sentence you would never let a stranger write about you. No moodboards yet.</p>
+        </div>
+        <div class="step">
+          <p class="step__n">02 — Direction</p>
+          <h3>Two routes, not ten</h3>
+          <p>Two real directions on your actual content, at full size. Choosing between two is a decision. Choosing between ten is a lottery.</p>
+        </div>
+        <div class="step">
+          <p class="step__n">03 — Make</p>
+          <h3>Built, not assembled</h3>
+          <p>Sites and apps written by hand. Artwork made at full resolution and delivered in every format you will actually need.</p>
+        </div>
+        <div class="step">
+          <p class="step__n">04 — Hand over</p>
+          <h3>I stay past delivery</h3>
+          <p>Launch, migration or final files, then two weeks of fixes and a short handover video. No lock-in of any kind.</p>
+        </div>
+      </div>
+
+      <p style="margin-top:clamp(2.5rem,6vh,4rem)">
+        <a class="btn btn--ghost" href="process.html">The process in full <span class="arrow" aria-hidden="true">&rarr;</span></a>
+      </p>
+    </div>
+  </section>
+
+
+  <!-- POINT OF VIEW — the section is its own demo -->
+  <section class="scene manifesto" id="manifesto" aria-labelledby="claim">
+    <div class="layer manifesto__bg" data-depth="0" data-parallax aria-hidden="true"></div>
+    <div class="layer" data-depth="1" data-parallax aria-hidden="true"><span class="glow manifesto__glow"></span></div>
+    <div class="layer" data-depth="2" data-parallax aria-hidden="true">
+      <span class="manifesto__ring"></span>
+      <span class="manifesto__ring" style="width:min(52vw,520px)"></span>
+    </div>
+
+    <div class="manifesto__stage" id="manifestoStage" data-depth="4">
+      <div class="inner" data-fade-group>
+        <p class="eyebrow" data-fade>Point of view</p>
+        <p class="claim" id="claim" data-accent="care">Detail is not decoration. It's how anything you make tells a stranger it was made with care.</p>
+        <p class="manifesto__tail" data-fade>
+          A button that answers the instant you press it. An app that opens where you
+          left it. A line that stops exactly where it should. Nobody names any of it
+          out loud — and everybody decides on it anyway.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACT — quiet seam: blur-to-focus settle -->
+  <section class="scene contact" id="contact" aria-labelledby="contactHeading">
+    <div class="layer contact__bg" data-depth="0" data-parallax aria-hidden="true"></div>
+    <div class="layer" data-depth="1" data-parallax aria-hidden="true"><span class="glow contact__glow"></span></div>
+    <div class="layer" data-depth="2" data-parallax aria-hidden="true">
+      <span class="hairline" style="left:0;right:0;top:8%"></span>
+    </div>
+
+    <div class="inner" data-depth="4">
+      <div class="contact__panel" id="contactPanel">
+        <div>
+          <p class="eyebrow">Start here</p>
+          <h2 class="wipe" id="contactHeading">
+          <span class="line"><span>Tell me what</span></span>
+          <span class="line"><span>you're <em>making</em>.</span></span>
+          </h2>
+          <p class="lede">
+            One project at a time, so the answer is either a real yes or a fast no.
+            You'll hear back within two working days, from me.
+          </p>
+          <p class="contact__value">
+            <strong>What you get:</strong> something that loads fast, says the true thing
+            about you on the first screen, and behaves well enough that people trust it
+            before they've read a word.
+          </p>
+        </div>
+
+{{FORM}}
+      </div>
+    </div>
+  </section>

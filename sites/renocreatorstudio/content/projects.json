@@ -1,0 +1,348 @@
+[
+  {
+    "slug": "project-one",
+    "hidden": false,
+    "status": "in-progress",
+    "discipline": "Website",
+    "title": "[Project name]",
+    "client": "[Who it is for, or \"Self-directed\"]",
+    "year": "2026",
+    "art": 1,
+    "summary": "[One sentence. What was in the way, and what you made to get past it. Write it the way you would say it out loud.]",
+    "tags": [
+      "[Tag]",
+      "[Tag]",
+      "[Tag]"
+    ],
+    "headline": [
+      "[A short first line]",
+      "[a second line, and the]",
+      "[<em>emphasis</em> lands here.]"
+    ],
+    "lede": "[Two sentences of setup. What the thing is, who it is for, and why it needed making.]",
+    "meta": [
+      {
+        "label": "Client",
+        "value": "[Name, or Self-directed]"
+      },
+      {
+        "label": "Year",
+        "value": "2026"
+      },
+      {
+        "label": "Role",
+        "value": "Design and build"
+      },
+      {
+        "label": "Status",
+        "value": "In progress"
+      }
+    ],
+    "stats": [],
+    "spec": [
+      {
+        "label": "Discipline",
+        "value": "Website"
+      },
+      {
+        "label": "Deliverables",
+        "value": "[What you handed over]"
+      },
+      {
+        "label": "Tools",
+        "value": "[What you used]"
+      },
+      {
+        "label": "Timeline",
+        "value": "[How long it took]"
+      }
+    ],
+    "sections": [
+      {
+        "label": "01",
+        "title": "What it needed to do",
+        "body": [
+          "[The problem, in plain terms. What was happening before, and why it mattered to whoever this was for.]"
+        ]
+      },
+      {
+        "label": "02",
+        "title": "The direction I took",
+        "body": [
+          "[The decision you made and why. This is the part people actually read — it is where taste shows.]"
+        ],
+        "list": [
+          "[A specific choice you made]",
+          "[Another one]",
+          "[A third]"
+        ]
+      },
+      {
+        "label": "03",
+        "title": "How it was made",
+        "body": [
+          "[What it is built from. Be concrete: languages, tools, anything you had to work out along the way.]"
+        ]
+      },
+      {
+        "label": "04",
+        "title": "Where it ended up",
+        "body": [
+          "[What it does now. If you have numbers you can stand behind, add them to \"stats\" above and they will appear as a band near the top. If you do not, leave stats empty and say what changed in words.]"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "project-two",
+    "hidden": false,
+    "status": "planned",
+    "discipline": "App",
+    "title": "[Project name]",
+    "client": "[Who it is for, or \"Self-directed\"]",
+    "year": "2026",
+    "art": 2,
+    "summary": "[One sentence on what this app does and who needed it.]",
+    "tags": [
+      "[Tag]",
+      "[Tag]",
+      "[Tag]"
+    ],
+    "headline": [
+      "[A short first line]",
+      "[and the <em>second</em> one.]"
+    ],
+    "lede": "[Two sentences of setup.]",
+    "meta": [
+      {
+        "label": "Client",
+        "value": "[Name, or Self-directed]"
+      },
+      {
+        "label": "Year",
+        "value": "2026"
+      },
+      {
+        "label": "Role",
+        "value": "Design and build"
+      },
+      {
+        "label": "Status",
+        "value": "Planned"
+      }
+    ],
+    "stats": [],
+    "spec": [
+      {
+        "label": "Discipline",
+        "value": "App"
+      },
+      {
+        "label": "Platform",
+        "value": "[Web, iOS, Android]"
+      },
+      {
+        "label": "Tools",
+        "value": "[What you used]"
+      },
+      {
+        "label": "Timeline",
+        "value": "[How long it took]"
+      }
+    ],
+    "sections": [
+      {
+        "label": "01",
+        "title": "What it needed to do",
+        "body": [
+          "[The problem.]"
+        ]
+      },
+      {
+        "label": "02",
+        "title": "The direction I took",
+        "body": [
+          "[The decision and why.]"
+        ]
+      },
+      {
+        "label": "03",
+        "title": "How it was made",
+        "body": [
+          "[What it is built from.]"
+        ]
+      },
+      {
+        "label": "04",
+        "title": "Where it ended up",
+        "body": [
+          "[What it does now.]"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "project-three",
+    "hidden": false,
+    "status": "planned",
+    "discipline": "Art",
+    "title": "[Project name]",
+    "client": "[Who it is for, or \"Self-directed\"]",
+    "year": "2026",
+    "art": 3,
+    "summary": "[One sentence on what this piece or series is.]",
+    "tags": [
+      "[Tag]",
+      "[Tag]",
+      "[Tag]"
+    ],
+    "headline": [
+      "[A short first line]",
+      "[and the <em>second</em> one.]"
+    ],
+    "lede": "[Two sentences of setup.]",
+    "meta": [
+      {
+        "label": "Client",
+        "value": "[Name, or Self-directed]"
+      },
+      {
+        "label": "Year",
+        "value": "2026"
+      },
+      {
+        "label": "Role",
+        "value": "Concept and artwork"
+      },
+      {
+        "label": "Status",
+        "value": "Planned"
+      }
+    ],
+    "stats": [],
+    "spec": [
+      {
+        "label": "Discipline",
+        "value": "Art"
+      },
+      {
+        "label": "Medium",
+        "value": "[What it is made of]"
+      },
+      {
+        "label": "Format",
+        "value": "[Sizes and file types delivered]"
+      },
+      {
+        "label": "Timeline",
+        "value": "[How long it took]"
+      }
+    ],
+    "sections": [
+      {
+        "label": "01",
+        "title": "What it was for",
+        "body": [
+          "[The brief, or the itch you were scratching.]"
+        ]
+      },
+      {
+        "label": "02",
+        "title": "The direction I took",
+        "body": [
+          "[The decision and why.]"
+        ]
+      },
+      {
+        "label": "03",
+        "title": "How it was made",
+        "body": [
+          "[Process, materials, tools.]"
+        ]
+      },
+      {
+        "label": "04",
+        "title": "Where it ended up",
+        "body": [
+          "[Where it lives now.]"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "project-four",
+    "hidden": true,
+    "status": "planned",
+    "discipline": "Website",
+    "title": "[Spare slot — set \"hidden\": false to show it]",
+    "client": "[Who it is for]",
+    "year": "2026",
+    "art": 4,
+    "summary": "[One sentence.]",
+    "tags": [
+      "[Tag]",
+      "[Tag]",
+      "[Tag]"
+    ],
+    "headline": [
+      "[A short first line]",
+      "[and the <em>second</em> one.]"
+    ],
+    "lede": "[Two sentences of setup.]",
+    "meta": [
+      {
+        "label": "Client",
+        "value": "[Name]"
+      },
+      {
+        "label": "Year",
+        "value": "2026"
+      },
+      {
+        "label": "Role",
+        "value": "Design and build"
+      },
+      {
+        "label": "Status",
+        "value": "Planned"
+      }
+    ],
+    "stats": [],
+    "spec": [
+      {
+        "label": "Discipline",
+        "value": "Website"
+      }
+    ],
+    "sections": [
+      {
+        "label": "01",
+        "title": "What it needed to do",
+        "body": [
+          "[The problem.]"
+        ]
+      },
+      {
+        "label": "02",
+        "title": "The direction I took",
+        "body": [
+          "[The decision and why.]"
+        ]
+      },
+      {
+        "label": "03",
+        "title": "How it was made",
+        "body": [
+          "[What it is built from.]"
+        ]
+      },
+      {
+        "label": "04",
+        "title": "Where it ended up",
+        "body": [
+          "[What it does now.]"
+        ]
+      }
+    ]
+  }
+]

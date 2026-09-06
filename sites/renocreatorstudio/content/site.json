@@ -1,0 +1,9 @@
+{
+  "name": "RenoCreatorStudio",
+  "tagline": "Design studio — websites, apps and art, working anywhere",
+  "description": "RenoCreatorStudio is a one-person design studio. Websites, apps and original artwork, designed and built end to end.",
+  "email": "hello@renocreatorstudio.com",
+  "availability": "Taking on new projects now",
+  "url": "https://renocreatorstudio.com",
+  "_note": "email and url are placeholders. Point email at an inbox you actually read before you deploy — a mailto: to a domain that does not exist fails silently."
+}
