@@ -13,9 +13,15 @@ hand. No frameworks, no page builders, no CSS libraries, no component kits.
 
 GOAL
 Produce ONE self-contained HTML document: the portfolio site for RenoCreatorStudio,
-an independent [WHAT THE STUDIO DOES] studio run by [YOUR NAME]. All CSS, all
+a one-person design studio run by [YOUR NAME] that works entirely over the internet.
+It designs websites, apps and original artwork for clients anywhere. All CSS, all
 JavaScript and every page live in that single file. The only external requests
 allowed are the Google Fonts link and the two GSAP scripts named below.
+
+The studio spans three disciplines, so the site has to make range look deliberate
+rather than unfocused. Every project carries a discipline label — Website, App or
+Art — and the work gallery mixes them on purpose: the argument the site makes is
+that one eye ran all of it.
 
 CONTENT RULES — these override everything else
 - Never invent a client name, statistic, testimonial, quote, logo or award. Where I
@@ -23,8 +29,91 @@ CONTENT RULES — these override everything else
   square brackets so I can see what to fill in.
 - Never use a stock photo, an <img>, or any raster asset. Every visual — project
   previews, panels, glows, grain — is drawn in CSS.
-- Write in plain British English. Short declarative sentences. No "elevate",
-  "seamless", "unlock", "in today's digital landscape", no exclamation marks.
+- Use the copy I supply below verbatim. Write any remaining copy in the same voice:
+  short declarative sentences, concrete nouns, plain [US or UK — pick one] English.
+  Never "elevate", "seamless", "unlock", "bespoke", "passionate", "in today's
+  digital landscape". No exclamation marks. No sentence that would be equally true
+  of any other studio.
+
+COPY — use these exactly
+Studio name: RenoCreatorStudio. Never abbreviate it, never add "the".
+
+Home hero
+  eyebrow:   RenoCreatorStudio — design studio, working anywhere
+  headline:  three wipe lines, the italic --sand emphasis on the third —
+               "I make the things"
+               "people judge you by"
+               "before they <em>ever meet you</em>."
+  lede:      Websites, apps and original artwork for people who need the work to
+             look considered the moment it loads. One person, start to finish,
+             wherever you are.
+  buttons:   "See the work" (solid) and "Start a project" (ghost)
+  status:    [AVAILABILITY — e.g. Two project slots open this quarter]
+
+Work section
+  eyebrow:   Selected work
+  heading:   two wipe lines — "Different mediums." / "The same eye."
+  aside:     Every one designed and made by the same pair of hands.
+  outro:     Websites, apps and artwork are the same job wearing different clothes:
+             decide what someone should feel in the first second, then remove
+             everything that gets in the way of it.
+
+Process section — four steps, shown as 01 to 04
+  heading:   three wipe lines — "You always know" / "which week you're in," /
+             "and what <em>comes next</em>."
+  lede:      No account manager, no relay race. You talk to the person doing the
+             work, every time.
+  01 — Brief · "Questions before pictures"
+       Who it is for, what it has to do, and the one sentence you would never let a
+       stranger write about you. No moodboards yet.
+  02 — Direction · "Two routes, not ten"
+       Two real directions on your actual content, at full size. Choosing between
+       two is a decision. Choosing between ten is a lottery.
+  03 — Make · "Built, not assembled"
+       Sites and apps written by hand. Artwork made at full resolution and delivered
+       in every format you will actually need.
+  04 — Hand over · "I stay past delivery"
+       Launch, migration or final files, then two weeks of fixes and a short
+       handover video. No lock-in of any kind.
+
+Point of view section — this is the word-by-word lighting sentence
+  eyebrow:   Point of view
+  claim:     Detail is not decoration. It's how anything you make tells a stranger
+             it was made with care.
+             (the final word "care" is the italic --sand accent word)
+  tail:      A button that answers the instant you press it. An app that opens where
+             you left it. A line that stops exactly where it should. Nobody names
+             any of it out loud — and everybody decides on it anyway.
+
+Studio page
+  headline:  three wipe lines — "One person," / "start to finish," /
+             "<em>no handoffs</em>."
+  beliefs, as four short blocks:
+    Speed is a design decision — not something you optimise afterwards.
+    Accessibility is not a phase — it is how the thing is built from the first line.
+    Motion has to mean something — every animation earns its place or it goes.
+    You should be able to leave — you get the source, the files and no lock-in.
+  pricing:   Priced per project, fixed before work starts, in [CURRENCY]. Supply the
+             ranges as label/value pairs. If I have not given ranges, write
+             "[PRICING — add your ranges]" rather than guessing a number.
+
+Contact page
+  headline:  two wipe lines — "Tell me what" / "you're <em>making</em>."
+  lede:      One project at a time, so the answer is either a real yes or a fast no.
+             You'll hear back within two working days, from me.
+  faq:       What does a project cost? · How soon could you start? · Do you work
+             with agencies? · Can you do just the design and we'll build it? · Do
+             you take on artwork on its own? · Will I be able to edit it myself?
+             Answer each in two or three sentences, or leave "[ANSWER]" if the
+             answer depends on facts I have not given you.
+
+404 page
+  headline:  two wipe lines — "This page was" / "never <em>made</em>."
+
+Footer
+  blurb:     Independent design studio — websites, apps and artwork, one project at
+             a time, for clients anywhere.
+  legal:     © [YEAR] RenoCreatorStudio. Designed and made by hand.
 
 PAGES — one document, hash-routed
 Each page is a <template data-route="...">; a tiny router clones the matching one
@@ -37,9 +126,20 @@ scroll animations against the new DOM. Default route is "/".
   /studio        Who it is, what it believes, how it prices
   /contact       Enquiry form and FAQ
   /404           Not found
-Use [NUMBER OF PROJECTS] projects. For each I will supply: name, sector, year,
-one-sentence problem-and-fix summary, three service tags, and up to three outcome
-figures. Where I have not, leave bracketed placeholders.
+Use [NUMBER OF PROJECTS] projects, ideally at least one from each discipline. For
+each I will supply: name, discipline (Website / App / Art), what it was for, year,
+a one-sentence summary of the problem and the fix, and three tags.
+
+Outcome numbers are OPTIONAL and must never be invented. Build each case study to
+work either way:
+  - If I give figures, show them in the three-across stat band, big serif numeral in
+    --sand over a one-line explanation.
+  - If I give none, drop the stat band entirely and put a spec list in its place —
+    label and value pairs such as Discipline, Deliverables, Tools, Timeline, Format.
+    A case study with no numbers must still look finished, not like a page with a
+    hole in it.
+Art projects use the same four-part case study, with the sections re-read as: what
+it was for, the direction taken, how it was made, and where it ended up.
 
 DESIGN TOKENS — use these exact values as CSS custom properties on :root
   --ink #07080A          page ground
@@ -111,8 +211,9 @@ Load GSAP 3.12.5 and ScrollTrigger from a CDN with defer.
    a text body. A thin progress rail below scales from 0 to 1 on the same progress.
    Wide previews whose whole point is range need to sit side by side; a stack buries
    all but the top one.
-4. SIX DISTINCT CARD ENTRANCES — one per card, fired off the horizontal progress via
-   containerAnimation, start "left 92%", once, duration 1.0:
+4. A DISTINCT ENTRANCE PER CARD — assign these in order, one per card, and if there
+   are more cards than entrances start the list again. Fired off the horizontal
+   progress via containerAnimation, start "left 92%", once, duration 1.0:
      wipe    clip-path inset(0 100% 0 0) and x -40  ->  inset(0 0% 0 0), x 0, power3.out
      rise    y 70, opacity 0                        ->  y 0, opacity 1, power3.out
      scale   scale .87, opacity 0                   ->  scale 1, opacity 1, power2.out
@@ -126,13 +227,24 @@ Load GSAP 3.12.5 and ScrollTrigger from a CDN with defer.
    word spans at runtime, set aria-label to the full sentence first so screen readers
    get one string. Words sit at opacity .16 and go to 1 one at a time as the pinned
    section scrubs, roughly 72px of scroll per word. Opacity only, never colour, which
-   is not GPU-composited. The claim is its own demo, so make the sentence about care.
+   is not GPU-composited. The claim is its own demo — the sentence is about care, so
+   the section has to be the most careful thing on the page.
 Supporting and deliberately sparse: the depth parallax above, one 11s CSS float loop
 on the hero visual (translate 10px to -14px, rotate -.5deg to .6deg, scale .995 to
 1.012, alternate), a hairline that draws across on scaleX before the process steps
 clip up in sequence, and a blur-to-focus settle on the contact panel.
 Only transform, opacity, filter and clip-path are ever animated — never width,
 height, top, left or colour. Set will-change at tween start and remove it on complete.
+
+CSS-DRAWN PROJECT PREVIEWS
+Each card and case study opens with a 16:10 panel drawn entirely in CSS: a diagonal
+gradient ground, two or three rounded bars suggesting a headline and lines of text,
+and one large block or a two-up split suggesting an image area, under a soft
+top-to-bottom darkening overlay. Give each project its own gradient so the row reads
+as six different things rather than one thing repeated — cool blue for Website, warm
+amber or clay for App, a muted violet, green or teal for Art. Keep every one at low
+saturation so no card outshouts the type. All of it is aria-hidden: meaning lives
+entirely in the text.
 
 DEGRADATION — non-negotiable, build it in from the start
 Put a small synchronous script in <head>, before paint, that adds html.anim only when
@@ -195,13 +307,18 @@ DONE WHEN
 
 | Placeholder | What it wants |
 | --- | --- |
-| `[WHAT THE STUDIO DOES]` | e.g. "web design and build", "renovation visualisation" |
-| `[YOUR NAME]` | who runs it |
-| `[NUMBER OF PROJECTS]` | how many case studies you actually have |
+| `[YOUR NAME]` | who runs the studio |
 | `[YOUR EMAIL]` | where the enquiry form should send |
+| `[US or UK]` | which spelling to keep consistent |
+| `[NUMBER OF PROJECTS]` | how many you actually want to show — four is enough |
+| `[AVAILABILITY]` | the hero status line, or delete that line |
+| `[CURRENCY]` and `[PRICING]` | your ranges, or leave them for the model to bracket |
+| `[YEAR]` | footer copyright |
 
-Then append your real project list — name, sector, year, one line on the problem and
-the fix, three service tags, and any outcome figures you can stand behind.
+Then append your project list — name, discipline (Website / App / Art), what it was
+for, year, one line on the problem and the fix, three tags, and outcome figures only
+where you have real ones. Projects without figures are handled: the case study swaps
+the stat band for a spec list instead of leaving a gap.
 
 ## Where this came from
 
